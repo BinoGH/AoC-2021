@@ -27,7 +27,6 @@ public class Star2 {
             for(int j = i+1; j < internalTimers.length; j++){
                 if(internalTimers[i] == internalTimers[j]){
                     count++;
-                    //To avoid counting same element again
                     fr[j] = visited;
                 }
             }
@@ -43,23 +42,11 @@ public class Star2 {
             }
         }
 
-        //Displays the frequency of each element present in array
-        System.out.println("---------------------");
-        System.out.println(" Element | Frequency");
-        System.out.println("---------------------");
-        for(int i = 0; i < newfr.size(); i++){
-            System.out.println("    " + internalTimers[i] + "    |    " + newfr.get(i));
-        }
-        System.out.println("---------------------");
-
-        System.out.println(Arrays.toString(fr));
-        System.out.println(newfr);
-
         School2 school = new School2(0, newfr.get(0), newfr.get(1), newfr.get(2), newfr.get(3), newfr.get(4),0, 0, 0);
 
         for(int i = 0; i < 257; i++){
             System.out.println("\nAfter " + i + " days:");
-            System.out.println("Totaal aantal vissen: " + school.getTotalFish());
+            System.out.println("Total amount of fish: " + school.getTotalFish());
             school.newDay();
         }
     }

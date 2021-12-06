@@ -3,7 +3,6 @@ package days.day6.star2;
 import java.util.ArrayList;
 
 public class School2 {
-    ArrayList<Lanternfish2> lanternfishList = new ArrayList<>();
     long amount0;
     long amount1;
     long amount2;
@@ -38,20 +37,6 @@ public class School2 {
         System.out.println("8: " + amount8);
         return amount0 + amount1 + amount2 + amount3 + amount4 + amount5 + amount6 + amount7 + amount8;
     }
-
-//    public void addFish(Lanternfish2 lanternfish){
-//        lanternfishList.add(lanternfish);
-//    }
-//
-//    public void newFish(){
-//        Lanternfish2 lanternfish = new Lanternfish2();
-//        addFish(lanternfish);
-//    }
-//
-//    public void oldFish(int timer){
-//        Lanternfish2 lanternfish = new Lanternfish2(timer);
-//        addFish(lanternfish);
-//    }
 
     public void newDay(){
         long newCycleFish = amount0;
