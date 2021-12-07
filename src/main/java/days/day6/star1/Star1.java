@@ -24,10 +24,8 @@ public class Star1 {
         for(int i = 0; i < 81; i++){
             System.out.println("\nAfter " + i + " days:");
             System.out.println("Totaal aantal vissen: " + school.lanternfishList.size());
-            System.out.println(school.lanternfishList);
+//            System.out.println(school.lanternfishList);
             school.newDay();
         }
-
-
     }
 }
